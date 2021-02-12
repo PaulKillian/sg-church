@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Recorder } from 'react-voice-recorder'
 import 'react-voice-recorder/dist/index.css'
+import DownloadLink from "react-download-link";
 
 export default function SermonRecorder() {
   const [audioDetails, setDetails] = useState({
@@ -13,16 +14,15 @@ export default function SermonRecorder() {
       s: null,
       }
   });
+  const [blob, setBlob] = useState(null)
 
   function handleAudioStop(data) {
     setDetails({ audioDetails: data });
   }
 
   function handleAudioUpload(file) {
-    console.log(file);
-    // fetch("/addname")
-    // .then
-  }
+    setBlob({ blob: audioDetails.url })
+  };
 
   function handleRest(){
     const reset = {
@@ -40,19 +40,19 @@ export default function SermonRecorder() {
 
   return (
     <>
-      <form method="post" action="/addname">
-        <label>Paul</label><br></br>
-        <input type="text" name="firstName" placeholder="Enter first name..." required></input>
-        <input type="text" name="lastName" placeholder="Enter last name..." required></input>
-        <input type="submit" value="Add Name"></input>
-      </form>
+      <DownloadLink
+        label="Download"
+        filename={audioDetails.url}
+        exportFile={() => audioDetails.url }
+      />
       <Recorder
-      record={true}
-      title={"New recording"}
-      audioURL={audioDetails.url}
-      showUIAudio handleAudioStop={data => handleAudioStop(data)}
-      handleAudioUpload={data => handleAudioUpload(data)}
-    handleRest={() => handleRest()} />
+        record={true}
+        title={"New recording"}
+        audioURL={audioDetails.url}
+        showUIAudio handleAudioStop={data => handleAudioStop(data)}
+        handleAudioUpload={data => handleAudioUpload(data)}
+        handleRest={() => handleRest()}
+      />
     </>
   )
 }
