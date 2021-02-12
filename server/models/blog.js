@@ -1,11 +1,11 @@
 const { Int32 } = require('bson');
 const mongoose = require('mongoose')
 
-const testSchema = new mongoose.Schema({
-  author: {
+const blogSchema = new mongoose.Schema({
+  hi: {
     type: String,
     required: true
   }
 })
 
-module.exports = mongoose.model('test', testSchema);
+module.exports = mongoose.model('blog', blogSchema);
