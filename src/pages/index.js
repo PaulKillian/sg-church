@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SermonRecorder from './templates/recorder/recorder'
+import Post from './templates/post/post'
 
 export default function App() {
 
@@ -9,6 +10,9 @@ export default function App() {
     setRecordingState({ recording: props })
   }
   return (
-    <SermonRecorder record={ recording } />
+    <>
+      <SermonRecorder record={recording} />
+      <Post />
+    </>
   )
 }
