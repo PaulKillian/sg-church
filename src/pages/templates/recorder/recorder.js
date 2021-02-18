@@ -62,10 +62,6 @@ export default function SermonRecorder(props) {
 
   return (
     <>
-      <div className="center animate-me">
-        <iframe className={'iframe'} src="https://www.youtube.com/embed/Df0ShwUlwkg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;enablejsapi=1"
-          allowfullscreen="" id="yui_3_17_2_1_1613437144895_80" frameborder="0"></iframe>
-      </div>
       <div className={'no-x-scroll center end w75'}>
         <div className={'animate-me w50'}>
         <DownloadLink

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SermonRecorder from './templates/recorder/recorder'
 import Post from './templates/post/post'
+import Hero from './templates/hero/hero'
 
 export default function App() {
 
@@ -11,8 +12,7 @@ export default function App() {
   }
   return (
     <>
-      <SermonRecorder record={recording} />
-      <Post />
+      <Hero />
     </>
   )
 }
