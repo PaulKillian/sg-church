@@ -1,10 +1,10 @@
-img {
+/* img {
 	height: 100vh;
 }
 
 p, img {
 	width: 85vw;
-}
+} */
 
 .flex-center {
 	display: flex;
