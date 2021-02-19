@@ -3,12 +3,12 @@
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: #5F9BFD;
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  color: white;
 }
+
+li {list-style-type: none;}
 
 p {margin-bottom: 1rem;}
 
@@ -35,8 +35,15 @@ h5 {font-size: 1.414rem;}
 small, .text_small {font-size: 0.707rem;}
 
 #landing {
-	height: 97vh;
-	width: 97vw;
+	height: 100vh;
+	width: 100vw;
+}
+
+.main-color {
+	background-color: #66DBE2;
+}
+.product-color {
+	background-color: #F3F2EF;
 }
 
 .transition, h1, h2, li {
@@ -79,8 +86,42 @@ video {
 }
 
 .pro-dimensions {
-	width: 27%;
 	height: 100vh;
 }
 
-li {list-style-type: none;}
+.img-dimensions {
+	width: 100%;
+	height: 91vh;
+}
+
+.shadowed {
+  box-shadow:
+		0 1px 1px rgba(0,0,0,0.12),
+		0 2px 2px rgba(0,0,0,0.12),
+		0 4px 4px rgba(0,0,0,0.12),
+		0 8px 8px rgba(0,0,0,0.12),
+		0 16px 16px rgba(0,0,0,0.12);
+}
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 370px;
+}
+
+.slide {
+    position: absolute;
+    left: -600px;
+    width: 600px;
+    height: 370px;
+    -webkit-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
