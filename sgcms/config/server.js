@@ -6,4 +6,7 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET', 'b65ca1c9523d148b417bd4082377420e'),
     },
   },
+  admin: {
+    url: '/dashboard', 'https://portfolio-cw9c7.ondigitalocean.app/'
+  },
 });
