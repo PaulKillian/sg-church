@@ -42,7 +42,7 @@ small, .text_small {font-size: 0.707rem;}
 .main-color {
 	background-color: #66DBE2;
 }
-.product-color {
+.project-color {
 	background-color: #F3F2EF;
 }
 
@@ -104,18 +104,18 @@ video {
 }
 .wrapper {
     position: relative;
-    overflow: hidden;
     width: 600px;
     height: 370px;
 }
 
 .slide {
     position: absolute;
-    left: -600px;
-    width: 600px;
+    left: -500px;
+    width: 560px;
     height: 370px;
     -webkit-animation: slide 0.5s forwards;
     animation: slide 0.5s forwards;
+		text-align: justify;
 }
 
 @-webkit-keyframes slide {
@@ -124,4 +124,16 @@ video {
 
 @keyframes slide {
     100% { left: 0; }
+}
+
+@media only screen and (max-width: 600px) {
+	.pro-dimensions {
+		height: 50vh;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.pro-dimensions {
+		height: 50vh;
+	}
 }
