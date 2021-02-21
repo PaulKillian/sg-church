@@ -86,7 +86,19 @@ video {
 }
 
 .pro-dimensions {
-	height: 100vh;
+	height: 80vh;
+}
+
+.col-12,
+.col-lg-6 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.left {
+	left: 2rem;
+	z-index: 1;
+
 }
 
 .img-dimensions {
