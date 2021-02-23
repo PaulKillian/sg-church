@@ -2,12 +2,13 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import heroImage from './images/me.jpg';
-import './templates/hero/hero.css'
-import Projects from './templates/hero/projects/projects'
+import './templates/hero/home.css'
+import Home from './templates/hero/home'
+import Projects from './templates/projects/projects'
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
   return (
@@ -21,27 +22,5 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
-  )
-}
-
-function Home() {
-  return (
-    <div className={'d-flex flex-wrap justify-content-between col-lg-12 main-color'} id={'landing'}>
-      <div className={'col-12 col-lg-6'}>
-        <h1 id={'Hello'}>Hello, <br></br>I am Paul.</h1>
-        <h2>
-        <ul className={'text-right'}>
-          <li>About</li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>Contact</li>
-        </ul>
-        </h2>
-      </div>
-      <div className={'col-12 col-lg-6 transition mt-4'}>
-        <img class={'img-dimensions shadowed'} src={heroImage}></img>
-      </div>
-    </div>
   )
 }
