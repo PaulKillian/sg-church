@@ -15,7 +15,9 @@ function Home() {
         <h1 id={'Hello'}>Hello, <br></br>I am Paul.</h1>
         <h2>
         <ul className={'text-right'}>
-          <li>About</li>
+          <li>
+              <Link to="/about">About</Link>
+          </li>
           <li>
             <Link to="/projects">Projects</Link>
           </li>

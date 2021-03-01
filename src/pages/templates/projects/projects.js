@@ -54,15 +54,15 @@ function Projects() {
 	}
 
   return (
-    <div className={'d-flex flex-wrap justify-content-around'}>
+    <div className={'d-flex flex-wrap justify-content-center'}>
       {projects.map(project => {
         return (
-          <div className={'d-flex justify-content-around main-color pro-dimensions align-items-center'}>
+          <div className={'d-flex main-color pro-dimensions'}>
             <img id={project.url} key={project.id}
               onClick={openWindow} src={"http://localhost:1337" + project.images.url}
-              className='col-12 col-lg-6 project-initial-position img-dimension top slideNode'></img>
-            <div className={'fadeNode col-12 col-lg-5 pt-3 pl-4'}>
-              <h3>{project.title}</h3>
+              className='col-12 col-lg-6 m-auto project-initial-position img-dimension top slideNode'></img>
+            <div className={'text-justify fadeNode m-auto col-12 col-lg-5 p-5 project-color'}>
+              <h3 className={'text-center pb-3 '}>{project.title}</h3>
               <p>{project.descriptions}</p>
             </div>
           </div>
