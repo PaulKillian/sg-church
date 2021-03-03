@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import '../hero/home.css'
+import { AiFillGithub } from 'react-icons/ai';
+import { CgWebsite } from "react-icons/cg";
+
 
 function Projects() {
 	const [projects, setProjects] = useState([])
@@ -10,7 +13,7 @@ function Projects() {
 	}, []);
 
 	const observer = () => {
-    const fadeNodes = document.querySelectorAll('.fadeNode');
+    const fadeNodes = document.querySelectorAll('.fade-node');
     const slideNodes = document.querySelectorAll('.slideNode');
 
 		const observer1 = new IntersectionObserver(entries => {
@@ -54,17 +57,21 @@ function Projects() {
 	}
 
   return (
-    <div className={'d-flex flex-wrap justify-content-center'}>
+    <div className={'d-flex flex-wrap main-color justify-content-center'}>
       {projects.map(project => {
-        return (
-          <div className={'d-flex main-color pro-dimensions'}>
-            <img id={project.url} key={project.id}
+				return (
+          <div className={'d-flex pro-dimensions'} key={project.id}>
+            <img id={project.url}
               onClick={openWindow} src={"http://localhost:1337" + project.images.url}
-              className='col-12 col-lg-6 m-auto project-initial-position img-dimension top slideNode'></img>
-            <div className={'text-justify fadeNode m-auto col-12 col-lg-5 p-5 project-color'}>
+							className='col-12 col-lg-6 m-auto project-initial-position img-dimension top slideNode'></img>
+            <div className={'text-justify top fade-node m-auto col-12 col-lg-5 p-5 parallax shadowed project-color'}>
               <h3 className={'text-center pb-3 '}>{project.title}</h3>
-              <p>{project.descriptions}</p>
-            </div>
+							<p>{project.descriptions}</p>
+							<div>
+							<AiFillGithub style={{color: '#D972FF'}} size={50}></AiFillGithub>
+							<CgWebsite style={{color: '#009999'}} size={50}></CgWebsite>
+						</div>
+						</div>
           </div>
         )
         })}
