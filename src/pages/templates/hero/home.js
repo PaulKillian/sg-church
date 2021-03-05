@@ -26,7 +26,7 @@ function Home() {
         </h2>
       </div>
       <div className={'col-12 col-lg-6 transition mt-4'}>
-        <img class={'img-dimensions shadowed'} src={heroImage}></img>
+        <img className={'img-dimensions shadowed'} src={heroImage}></img>
       </div>
     </div>
   )
