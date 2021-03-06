@@ -4,6 +4,7 @@ module.exports = {
     /* Rest of the plugins */
 		`gatsby-plugin-nodejs`,
     `gatsby-plugin-offline`,
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    `gatsby-plugin-transition-link`
   ],
 };
