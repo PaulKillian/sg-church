@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import '../hero/home.css'
 import { AiFillGithub } from 'react-icons/ai';
 import { CgWebsite } from "react-icons/cg";
-import { ProjectStyles, IconStyles, ImageStyles, RowStyles} from "./tailwind"
+import { ProjectStyles, IconStyles, ImageStyles, RowStyles } from "./tailwind"
+import TransitionLink from 'gatsby-plugin-transition-link'
+import Link from 'gatsby-plugin-transition-link'
 
 
 function Projects() {
@@ -67,7 +69,7 @@ function Projects() {
 							<img id={project.url} src={"http://localhost:1337" + project.images.url}></img>
 						</ImageStyles>
             <ProjectStyles>
-              <h3 className={'text-center pb-3 '}>{project.title}</h3>
+              <h3 className={'text-center'}>{project.title}</h3>
 							<p>{project.descriptions}</p>
 							<div className={'d-flex align-items-center justify-content-center'}>
 								<div className={'rotate'}>

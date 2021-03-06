@@ -66,14 +66,14 @@ small, .text_small {font-size: 0.707rem;}
 
 img {
 	position: relative;
-  width: 50%;
+  width: 100%;
 	height: auto;
 	border-radius: 10px;
 	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	filter: drop-shadow(0px 25px 35px rgb(131, 131, 131));
 }
 
-img.img-dimension:hover {
+.img-dimension:hover {
 	z-index: 1000;
 }
 
@@ -200,7 +200,7 @@ li:nth-of-type(2n) {
   }
   100% {
     opacity: 1;
-		transform: translateX(26rem)
+		transform: translateX(20rem)
   }
 }
 
