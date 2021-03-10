@@ -5,10 +5,13 @@ import {
   Route
 } from "react-router-dom";
 import heroImage from './images/me.jpg';
-import './templates/hero/home.css'
-import Home from './templates/hero/home'
-import About from './templates/about/about'
-import Projects from './templates/projects/projects'
+import './hero/home.css'
+import Home from '../pages/home'
+import About from '../pages/about'
+import Projects from '../pages/projects'
+import Reviews from '../pages/reviews'
+import Contact from '../pages/contact'
+import Nav from '../pages/nav'
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
@@ -20,6 +23,12 @@ export default function App() {
         </Route>
         <Route path="/projects">
           <Projects />
+        </Route>
+        <Route path="/reviews">
+          <Reviews />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/">
           <Home />
