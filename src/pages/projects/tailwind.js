@@ -10,9 +10,9 @@ export const IconStyles = styled.div.attrs({
 })``;
 
 export const ImageStyles = styled.div.attrs({
-	className: 'col-6 m-auto project-initial-position img-dimension top slideNode'
+	className: 'col-5 m-auto project-initial-position img-dimension top slideNode'
 })``;
 
 export const RowStyles = styled.div.attrs({
-	className: 'col-10 d-flex flex-wrap justify-content-center pro-dimensions'
+	className: 'col-12 d-flex flex-wrap justify-content-center pro-dimensions'
 })``;
