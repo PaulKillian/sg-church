@@ -9,6 +9,7 @@ import TransitionLink from 'gatsby-plugin-transition-link'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import './hero/home.css';
 import heroImage from './images/me.jpg'
+import screen from './images/screen.png'
 
 function Home() {
   return (
@@ -17,7 +18,8 @@ function Home() {
         <h1 id={'Hello'}>Hello, <br></br>I am Paul.</h1>
         <h2>
         <ul className={'text-right'}>
-          <li>
+            <li>
+              <img className='icon' src={screen} alt='desktop screen'></img>
             <AniLink paintDrip to="projects" hex="#F3D5FF" duration={1}>
               Projects
             </AniLink>

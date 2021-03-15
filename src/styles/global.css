@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "PolarVortex-raAA";
+  src: local("PolarVortex-raAA"),
+    url("../fonts/PolarVortex-raAA.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.font {
+	font-family: PolarVortex-raAA
+}
