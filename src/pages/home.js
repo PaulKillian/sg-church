@@ -10,10 +10,11 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import './hero/home.css';
 import heroImage from './images/me.jpg'
 import screen from './images/screen.png'
+import '../fonts/MaroonBold.ttf';
 
 function Home() {
   return (
-    <div className={'d-flex flex-wrap justify-content-between col-lg-12 main-color'} id={'landing'}>
+    <div className={'d-flex flex-wrap justify-content-between col-lg-12 home-color font'} id={'landing'}>
       <div className={'col-12 col-lg-6'}>
         <h1 id={'Hello'}>Hello, <br></br>I am Paul.</h1>
         <h2>
