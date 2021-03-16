@@ -5,7 +5,7 @@ import '../fonts/PolarVortex-raAA.ttf';
 
 const Nav = () => {
 	return (
-		<div className="d-flex justify-content-around nav pt-2">
+		<div className="d-flex justify-content-around nav pt-2 shadowed">
 			<AniLink className="text-white" paintDrip to="/" hex="#F3D5FF" duration={1}>
 				<h3 className="font">Home</h3>
 			</AniLink>
